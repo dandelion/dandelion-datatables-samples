@@ -1,0 +1,19 @@
+# Maven
+target/
+
+# IntelliJ
+*.iml
+.idea/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+.metadata
+
+# JRebel
+rebel.xml
+
+# OSX
+.DS_Store
