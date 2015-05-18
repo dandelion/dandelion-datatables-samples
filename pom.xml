@@ -1,0 +1,378 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>com.github.dandelion</groupId>
+   <artifactId>dandelion-datatables-samples-parent</artifactId>
+   <version>1.0.0-SNAPSHOT</version>
+   <packaging>pom</packaging>
+
+   <name>Dandelion :: Datatables :: Samples :: Parent</name>
+   <description>Parent of all Dandelion samples</description>
+
+   <properties>
+      <!-- Configuration -->
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+      <!-- Dependencies -->
+      <dandelion.version>1.0.0-SNAPSHOT</dandelion.version>
+      <jstl.version>1.2</jstl.version>
+      <tiles.version>2.2.2</tiles.version>
+      <servlet-api.version>3.0.1</servlet-api.version>
+      <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>
+      <thymeleaf.layout.version>1.2.4</thymeleaf.layout.version>
+      <thymeleaf.tiles2.version>2.1.1.RELEASE</thymeleaf.tiles2.version>
+      <thymeleaf-extras-tiles2-spring3.version>2.1.1.RELEASE</thymeleaf-extras-tiles2-spring3.version>
+      <spring3.version>3.2.10.RELEASE</spring3.version>
+      <spring4.version>4.1.0.RELEASE</spring4.version>
+      <jackson.version>1.9.13</jackson.version>
+      <struts1.version>1.3.10</struts1.version>
+      <struts2.version>2.1.8</struts2.version>
+      <hibernate.version>4.3.5.Final</hibernate.version>
+      <slf4j-api.version>1.7.5</slf4j-api.version>
+      <logback.version>1.1.2</logback.version>
+      <h2.version>1.3.175</h2.version>
+
+      <!-- Maven plugins -->
+      <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
+      <tomcat7-maven-plugin.version>2.0</tomcat7-maven-plugin.version>
+      <jetty-maven-plugin.version>8.1.8.v20121106</jetty-maven-plugin.version>
+      <spring-boot-maven-plugin.version>1.0.2.RELEASE</spring-boot-maven-plugin.version>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+         <!-- Dandelion -->
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-jsp</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-thymeleaf</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-spring3</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-ehcache</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-webjars</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-yuicompressor</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+
+         <!-- Dandelion-Datatables -->
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-jsp</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-thymeleaf</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-spring3</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-compression-yui</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-export-poi</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-export-poi-ooxml</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-export-itext</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-struts1</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>datatables-struts2</artifactId>
+            <version>${dandelion.version}</version>
+         </dependency>
+
+         <!-- Spring 3 -->
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring3.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring3.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring3.version}</version>
+         </dependency>
+
+         <!-- Spring 4 -->
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring4.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring4.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring4.version}</version>
+         </dependency>
+
+         <!-- Struts 1 -->
+         <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-core</artifactId>
+            <version>${struts1.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-taglib</artifactId>
+            <version>${struts1.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-extras</artifactId>
+            <version>${struts1.version}</version>
+         </dependency>
+
+         <!-- Struts 2 -->
+         <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts2.version}</version>
+         </dependency>
+
+         <!-- JSTL -->
+         <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+         </dependency>
+
+         <!-- Servlet -->
+         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+         </dependency>
+
+         <!-- Jackson -->
+         <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson.version}</version>
+         </dependency>
+
+         <!-- Thymeleaf -->
+         <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>${thymeleaf.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring3</artifactId>
+            <version>${thymeleaf.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring4</artifactId>
+            <version>${thymeleaf.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-tiles2</artifactId>
+            <version>${thymeleaf.tiles2.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-tiles2-spring3</artifactId>
+            <version>${thymeleaf-extras-tiles2-spring3.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>nz.net.ultraq.thymeleaf</groupId>
+            <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>${thymeleaf.layout.version}</version>
+         </dependency>
+
+         <!-- Tiles -->
+         <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-core</artifactId>
+            <version>${tiles.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-api</artifactId>
+            <version>${tiles.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-jsp</artifactId>
+            <version>${tiles.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-servlet</artifactId>
+            <version>${tiles.version}</version>
+         </dependency>
+
+         <!-- Sitemesh -->
+         <dependency>
+            <groupId>org.sitemesh</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>${sitemesh3.version}</version>
+         </dependency>
+
+         <!-- Hibernate as JPA implementation -->
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+         </dependency>
+
+         <!-- Database drivers -->
+         <!-- H2 (local) -->
+         <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+         </dependency>
+
+         <!-- Logging -->
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j-api.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <build>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>${maven-compiler-plugin.version}</version>
+               <configuration>
+                  <source>1.6</source>
+                  <target>1.6</target>
+               </configuration>
+            </plugin>
+
+            <!-- Jetty 8 -->
+            <plugin>
+               <groupId>org.mortbay.jetty</groupId>
+               <artifactId>jetty-maven-plugin</artifactId>
+               <version>${jetty-maven-plugin.version}</version>
+               <configuration>
+                  <connectors>
+                     <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                        <port>9090</port>
+                        <maxIdleTime>60000</maxIdleTime>
+                     </connector>
+                  </connectors>
+                  <webAppConfig>
+                     <contextPath>/${project.artifactId}</contextPath>
+                  </webAppConfig>
+               </configuration>
+            </plugin>
+
+            <!-- Tomcat 7 -->
+            <plugin>
+               <groupId>org.apache.tomcat.maven</groupId>
+               <artifactId>tomcat7-maven-plugin</artifactId>
+               <version>${tomcat7-maven-plugin.version}</version>
+               <configuration>
+                  <server>tomcat-development-server</server>
+                  <port>9090</port>
+                  <path>/${project.artifactId}</path>
+               </configuration>
+            </plugin>
+
+            <!-- JBoss AS 7 -->
+            <plugin>
+               <groupId>org.jboss.as.plugins</groupId>
+               <artifactId>jboss-as-maven-plugin</artifactId>
+               <version>7.6.Final</version>
+               <configuration>
+                  <hostname>127.0.0.1</hostname>
+                  <execute-commands>
+                     <commands>
+                        <command>/subsystem=logging/file-handler=debug:add(level=DEBUG,autoflush=true,file={"relative-to"=>"jboss.server.log.dir",
+                           "path"=>"debug.log"})</command>
+                        <command>/subsystem=logging/logger=org.jboss.as:add(level=DEBUG,handlers=[debug])</command>
+                     </commands>
+                  </execute-commands>
+               </configuration>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+   </build>
+
+   <repositories>
+      <repository>
+         <id>sonatype-nexus-snapshots</id>
+         <name>Sonatype Nexus Snapshots</name>
+         <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+</project>
