@@ -5,9 +5,9 @@ A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: fe
 
 ## Technology stack
 
- - Thymeleaf 2.1.3.RELEASE
- - Dandelion-Datatables 0.10.0
- - Spring 3.2.9.RELEASE
+ - Thymeleaf 2.1.4.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 3.2.10.RELEASE
 
 ## Features
 
@@ -38,7 +38,7 @@ Using __Jetty__:
 
 Using __Docker__:
 
-    docker run -p 9090:8080 dandelion/sample-dt-thymeleaf-starter
+    docker run -p 9090:8080 dandelion/ddl-dt-tml-starter
 
 You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-starter](http://localhost:9090/datatables-thymeleaf-starter)
     
