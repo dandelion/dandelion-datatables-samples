@@ -5,10 +5,10 @@ A sample which shows how to use an AJAX source with server-side processing based
 
 ## Technology stack
 
- - Thymeleaf 2.1.3.RELEASE
- - Dandelion-Datatables 0.10.0
+ - Thymeleaf 2.1.4.RELEASE
+ - Dandelion-Datatables 1.0.0
  - Jackson 1.9.13
- - Spring 3.2.9.RELEASE
+ - Spring 3.2.10.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0
  - H2 database
 
@@ -35,6 +35,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-tml-ajax
 
 You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-ajax](http://localhost:9090/datatables-thymeleaf-ajax)
 
