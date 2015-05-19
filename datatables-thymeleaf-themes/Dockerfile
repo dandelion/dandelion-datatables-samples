@@ -10,6 +10,6 @@ ADD . /home/dandelion
 # Deploy it to Tomcat
 # Remove sources to make the image thinner
 RUN cd /home/dandelion && \
-    mvn package -pl com.github.dandelion:datatables-thymeleaf-themes && \
+    mvn package && \
     cp -r target/datatables-thymeleaf-themes /usr/local/tomcat/webapps/ && \
     rm -rf /home/dandelion

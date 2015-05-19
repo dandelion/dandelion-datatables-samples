@@ -123,23 +123,6 @@
                <path>/${project.artifactId}</path>
             </configuration>
          </plugin>
-
-         <!-- JBoss AS 7 -->
-         <plugin>
-            <groupId>org.jboss.as.plugins</groupId>
-            <artifactId>jboss-as-maven-plugin</artifactId>
-            <version>7.6.Final</version>
-            <configuration>
-               <hostname>127.0.0.1</hostname>
-               <execute-commands>
-                  <commands>
-                     <command>/subsystem=logging/file-handler=debug:add(level=DEBUG,autoflush=true,file={"relative-to"=>"jboss.server.log.dir",
-                        "path"=>"debug.log"})</command>
-                     <command>/subsystem=logging/logger=org.jboss.as:add(level=DEBUG,handlers=[debug])</command>
-                  </commands>
-               </execute-commands>
-            </configuration>
-         </plugin>
       </plugins>
    </build>
 
