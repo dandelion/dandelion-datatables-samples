@@ -8,8 +8,8 @@ A sample which shows how to apply CSS themes on your tables.
  - JSP
  - JSTL 1.2
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 0.10.0
- - Spring 3.2.9.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 3.2.10.RELEASE
 
 ## Features
 
@@ -28,6 +28,10 @@ Using __Tomcat__ :
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-jsp-themes
 
 You can then access the sample here: [http://localhost:9090/datatables-jsp-themes](http://localhost:9090/datatables-jsp-themes)
 
