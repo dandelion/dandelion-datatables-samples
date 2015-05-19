@@ -36,7 +36,7 @@ Using __Jetty__:
 
     mvn jetty:run
 
-Using __Docker__:
+Using __Docker__ (Tomcat 7):
 
     docker run -p 9090:8080 dandelion/dt-tml-starter
 
