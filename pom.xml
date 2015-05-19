@@ -8,7 +8,7 @@
    <packaging>pom</packaging>
 
    <name>Dandelion :: Datatables :: Samples :: Parent</name>
-   <description>Parent of all Dandelion samples</description>
+   <description>Parent of all Dandelion-Datatables samples</description>
 
    <properties>
       <!-- Configuration -->
@@ -39,6 +39,26 @@
       <jetty-maven-plugin.version>8.1.8.v20121106</jetty-maven-plugin.version>
       <spring-boot-maven-plugin.version>1.0.2.RELEASE</spring-boot-maven-plugin.version>
    </properties>
+
+   <modules>
+      <module>datatables-jsp-ajax</module>
+      <module>datatables-jsp-configuration-groups</module>
+      <module>datatables-jsp-export</module>
+      <module>datatables-jsp-extension</module>
+      <module>datatables-jsp-i18n-struts1</module>
+      <module>datatables-jsp-i18n-struts2</module>
+      <module>datatables-jsp-plugins</module>
+      <module>datatables-jsp-starter</module>
+      <module>datatables-jsp-themes</module>
+      <module>datatables-thymeleaf-ajax</module>
+      <module>datatables-thymeleaf-configuration-groups</module>
+      <module>datatables-thymeleaf-export</module>
+      <module>datatables-thymeleaf-extension</module>
+      <module>datatables-thymeleaf-javaconfig</module>
+      <module>datatables-thymeleaf-plugins</module>
+      <module>datatables-thymeleaf-starter</module>
+      <module>datatables-thymeleaf-themes</module>
+   </modules>
 
    <dependencyManagement>
       <dependencies>
@@ -122,38 +142,38 @@
          </dependency>
 
          <!-- Spring 3 -->
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring3.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring3.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring3.version}</version>
-         </dependency>
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-web</artifactId> -->
+<!--             <version>${spring3.version}</version> -->
+<!--          </dependency> -->
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-webmvc</artifactId> -->
+<!--             <version>${spring3.version}</version> -->
+<!--          </dependency> -->
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-orm</artifactId> -->
+<!--             <version>${spring3.version}</version> -->
+<!--          </dependency> -->
 
-         <!-- Spring 4 -->
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring4.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring4.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring4.version}</version>
-         </dependency>
+<!--          Spring 4 -->
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-web</artifactId> -->
+<!--             <version>${spring4.version}</version> -->
+<!--          </dependency> -->
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-webmvc</artifactId> -->
+<!--             <version>${spring4.version}</version> -->
+<!--          </dependency> -->
+<!--          <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-orm</artifactId> -->
+<!--             <version>${spring4.version}</version> -->
+<!--          </dependency> -->
 
          <!-- Struts 1 -->
          <dependency>
@@ -375,4 +395,5 @@
          </snapshots>
       </repository>
    </repositories>
+
 </project>

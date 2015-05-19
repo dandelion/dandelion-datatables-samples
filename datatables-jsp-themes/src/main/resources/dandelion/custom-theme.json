@@ -1,0 +1,14 @@
+{
+    "bundle" : "custom-theme",
+    "dependencies": [ "jqueryui" ],
+    "assets": [
+		{
+		    "name": "jquery-ui-custom",
+		    "version": "0.10.0",
+		    "type": "css",
+		    "locations": {
+		        "webapp": "/assets/css/jquery-ui-1.10.4.custom.css"
+		    }
+		}
+    ]
+}

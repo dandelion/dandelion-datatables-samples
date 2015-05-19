@@ -38,7 +38,7 @@ Using __Jetty__:
 
 Using __Docker__:
 
-    docker run -p 9090:8080 dandelion/ddl-dt-tml-starter
+    docker run -p 9090:8080 dandelion/dt-tml-starter
 
 You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-starter](http://localhost:9090/datatables-thymeleaf-starter)
     

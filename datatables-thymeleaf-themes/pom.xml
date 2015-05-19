@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>com.github.dandelion</groupId>
+   <artifactId>datatables-thymeleaf-themes</artifactId>
+   <version>1.0.0-SNAPSHOT</version>
+   <packaging>war</packaging>
+
+   <name>Dandelion :: Datatables :: Samples :: datatables-thymeleaf-themes</name>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>com.github.dandelion</groupId>
+            <artifactId>dandelion-datatables-samples-bom</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <dependencies>
+      <!-- Dandelion-DataTables -->
+      <dependency>
+         <groupId>com.github.dandelion</groupId>
+         <artifactId>datatables-thymeleaf</artifactId>
+      </dependency>
+
+      <!-- Spring -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-web</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-webmvc</artifactId>
+      </dependency>
+
+      <!-- Thymeleaf -->
+      <dependency>
+         <groupId>org.thymeleaf</groupId>
+         <artifactId>thymeleaf</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.thymeleaf</groupId>
+         <artifactId>thymeleaf-spring3</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.thymeleaf.extras</groupId>
+         <artifactId>thymeleaf-extras-tiles2-spring3</artifactId>
+      </dependency>
+
+      <!-- Apache Tiles -->
+      <dependency>
+         <groupId>org.apache.tiles</groupId>
+         <artifactId>tiles-core</artifactId>
+      </dependency>
+
+      <!-- JSTL (Needed by Tiles) -->
+      <dependency>
+         <groupId>jstl</groupId>
+         <artifactId>jstl</artifactId>
+      </dependency>
+
+      <!-- Servlet -->
+      <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>javax.servlet-api</artifactId>
+      </dependency>
+
+      <!-- Logging -->
+      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-classic</artifactId>
+      </dependency>
+
+   </dependencies>
+
+   <build>
+      <finalName>${project.artifactId}</finalName>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>1.6</source>
+               <target>1.6</target>
+            </configuration>
+         </plugin>
+
+         <!-- Jetty 8 -->
+         <plugin>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>8.1.8.v20121106</version>
+            <configuration>
+               <connectors>
+                  <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                     <port>9090</port>
+                     <maxIdleTime>60000</maxIdleTime>
+                  </connector>
+               </connectors>
+               <webAppConfig>
+                  <contextPath>/${project.artifactId}</contextPath>
+               </webAppConfig>
+            </configuration>
+         </plugin>
+
+         <!-- Tomcat 7 -->
+         <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.0</version>
+            <configuration>
+               <server>tomcat-development-server</server>
+               <port>9090</port>
+               <path>/${project.artifactId}</path>
+            </configuration>
+         </plugin>
+
+         <!-- JBoss AS 7 -->
+         <plugin>
+            <groupId>org.jboss.as.plugins</groupId>
+            <artifactId>jboss-as-maven-plugin</artifactId>
+            <version>7.6.Final</version>
+            <configuration>
+               <hostname>127.0.0.1</hostname>
+               <execute-commands>
+                  <commands>
+                     <command>/subsystem=logging/file-handler=debug:add(level=DEBUG,autoflush=true,file={"relative-to"=>"jboss.server.log.dir",
+                        "path"=>"debug.log"})</command>
+                     <command>/subsystem=logging/logger=org.jboss.as:add(level=DEBUG,handlers=[debug])</command>
+                  </commands>
+               </execute-commands>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+   <repositories>
+      <repository>
+         <id>sonatype-nexus-snapshots</id>
+         <name>Sonatype Nexus Snapshots</name>
+         <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+</project>
