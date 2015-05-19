@@ -7,8 +7,8 @@ A sample which shows the basics of Dandelion-Datatables: feature enablement, sor
 
  - JSP
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 0.10.0
- - Spring 3.2.7.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 3.2.10.RELEASE
 
 ## Features
 
@@ -37,6 +37,10 @@ Using __Jetty__:
 
     mvn jetty:run
 
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-jsp-starter
+    
 You can then access the sample here: [http://localhost:9090/datatables-jsp-starter](http://localhost:9090/datatables-jsp-starter)
 
 ## Bug/improvement
