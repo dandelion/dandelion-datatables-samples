@@ -7,8 +7,8 @@ A sample which shows how to use the DataTables' extras supported by Dandelion-Da
 
  - JSP
  - JSTL 1.2
- - Dandelion-Datatables 1.10.0
- - Spring 3.2.9.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 3.2.10.RELEASE
 
 ## Features
 		
@@ -27,6 +27,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-jsp-plugins
 
 You can then access the sample here: [http://localhost:9090/datatables-jsp-plugins](http://localhost:9090/datatables-jsp-plugins)
 
