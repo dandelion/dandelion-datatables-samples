@@ -1,3 +1,6 @@
+#
+# dandelion/dt-tml-starter
+#
 FROM dandelion/sample-tomcat:7.0.62-jdk7
 MAINTAINER Thibault Duchateau <thibault.duchateau@gmail.com>
 
