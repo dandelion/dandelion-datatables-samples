@@ -8,9 +8,9 @@ A sample which shows how to use an AJAX source, with or without server-side proc
  - JSP 
  - JSTL 1.2
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 0.10.0
+ - Dandelion-Datatables 1.0.0
  - Jackson 1.9.13
- - Spring 3.2.9.RELEASE
+ - Spring 3.2.10.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0
  - H2 database
 
@@ -35,6 +35,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 -p 9091:9091 dandelion/dt-jsp-ajax
 
 You can then access the sample here: [http://localhost:9090/datatables-jsp-ajax](http://localhost:9090/datatables-jsp-ajax)
 
