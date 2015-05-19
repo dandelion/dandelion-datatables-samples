@@ -5,9 +5,9 @@ A sample which shows how to set up and application using Dandelion, Thymeleaf an
 
 ## Technology stack
 
- - Thymeleaf / Thymeleaf-Spring4 2.1.3.RELEASE
- - Dandelion-Datatables 0.10.0
- - Spring 4.0.5.RELEASE
+ - Thymeleaf / Thymeleaf-Spring4 2.1.4.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 4.1.6.RELEASE
 
 ## Features
 		
@@ -23,6 +23,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-tml-javaconfig
 
 You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-javaconfig](http://localhost:9090/datatables-thymeleaf-javaconfig)
 
