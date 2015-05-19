@@ -6,10 +6,10 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
 ## Technology stack
 
  - Apache Tiles 2.2.2
- - Thymeleaf 2.1.3.RELEASE
+ - Thymeleaf 2.1.4.RELEASE
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
- - Dandelion-Datatables 0.10.0
- - Spring 3.2.9.RELEASE
+ - Dandelion-Datatables 1.0.0
+ - Spring 3.2.10.RELEASE
 
 ## Features
 		
@@ -27,6 +27,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-tml-configuration-groups
 
 You can then access the sample here: [http://localhost:9090/datatables-thymeleaf-configuration-groups](http://localhost:9090/datatables-thymeleaf-configuration-groups)
 
