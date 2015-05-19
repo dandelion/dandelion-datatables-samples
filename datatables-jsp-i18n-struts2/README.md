@@ -7,7 +7,7 @@ A sample which shows how to configure Dandelion-Datatables to work with Struts 2
 
  - JSP 
  - JSTL 1.2
- - Dandelion-Datatables 0.10.0
+ - Dandelion-Datatables 1.0.0
  - Struts 2.1.8
 
 ## Features
@@ -24,6 +24,10 @@ Using __Apache Tomcat__:
 Using __Jetty__:
 
     mvn jetty:run
+
+Using __Docker__ (Tomcat 7):
+
+    docker run -p 9090:8080 dandelion/dt-jsp-i18n-struts2
 
 You can then access the sample here: [http://localhost:9090/datatables-jsp-i18n-struts2](http://localhost:9090/datatables-jsp-i18n-struts2)
 
