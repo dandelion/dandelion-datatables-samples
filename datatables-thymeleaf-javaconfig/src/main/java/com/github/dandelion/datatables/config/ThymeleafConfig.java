@@ -9,8 +9,6 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 import com.github.dandelion.datatables.thymeleaf.dialect.DataTablesDialect;
 import com.github.dandelion.thymeleaf.dialect.DandelionDialect;
-import com.github.dandelion.thymeleaf.templatemode.DandelionTemplateModeHandlers;
-import com.github.dandelion.thymeleaf.templateresolver.JsTemplateResolver;
 
 @Configuration
 public class ThymeleafConfig {
@@ -26,22 +24,10 @@ public class ThymeleafConfig {
 	}
 
 	@Bean
-	public JsTemplateResolver dandelionAssetTemplateResolver(){
-	   JsTemplateResolver resolver = new JsTemplateResolver();
-      resolver.setPrefix("/assets/");
-//      resolver.setSuffix(".html");
-      resolver.setTemplateMode("DANDELION");
-      resolver.setCacheable(false);
-      return resolver;
-	}
-	
-	@Bean
 	public SpringTemplateEngine templateEngine() {
 		SpringTemplateEngine engine = new SpringTemplateEngine();
 		engine.addTemplateModeHandler(StandardTemplateModeHandlers.HTML5);
-		engine.addTemplateModeHandler(DandelionTemplateModeHandlers.DANDELION_JS);
 		engine.addTemplateResolver(templateResolver());
-		engine.addTemplateResolver(dandelionAssetTemplateResolver());
 		engine.addDialect(new DandelionDialect());
 		engine.addDialect(new DataTablesDialect());
 		return engine;
