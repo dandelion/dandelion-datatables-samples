@@ -51,7 +51,7 @@
                      <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
-                     <li><a href="http://dandelion.github.io/datatables">Documentation</a></li>
+                     <li><a href="http://dandelion.github.io/components/datatables">Documentation</a></li>
                      <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
                      <li><a href="https://github.com/dandelion/dandelion-datatables-samples/issues">Report an issue</a></li>
                   </ul>

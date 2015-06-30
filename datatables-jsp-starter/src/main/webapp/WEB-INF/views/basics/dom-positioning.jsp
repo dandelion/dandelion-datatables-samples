@@ -6,7 +6,7 @@
       <h3>DOM positioning</h3>
       <p>
          The following examples shows how to use the
-         <a href="http://dandelion.github.io/datatables/features/basics/dom-positionning.html">DOM
+         <a href="http://dandelion.github.io/components/datatables/features/basics/dom-positionning.html">DOM
             positioning</a> feature.
       </p>
    </div>

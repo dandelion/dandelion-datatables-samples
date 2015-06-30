@@ -12,9 +12,9 @@ A sample which shows how to use with Thymeleaf the DataTables' extras supported 
 ## Features
 		
  - __Data source type__: DOM
- - Scroller plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/scroller.html">Doc</a>
- - ColReorder plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/colreorder.html">Doc</a>
- - FixedHeader plugin - <a href="http://dandelion.github.io/datatables/tutorials/plugins/fixedheader.html">Doc</a>
+ - Scroller plugin
+ - ColReorder plugin
+ - FixedHeader plugin
 
 ## Running this sample
 

@@ -8,7 +8,7 @@
          In the following example, the "black-tie" theme option from <a href="http://jqueryui.com/themeroller/">ThemeRoller</a> has been selected.
       </p>
       <p>
-         Much more theme options are available. See the <a href="http://dandelion.github.io/datatables/docs/ref/configuration#cssconfiguration">documentation</a>.
+         Much more theme options are available. See the <a href="http://dandelion.github.io/components/datatables/docs/ref/configuration#cssconfiguration">documentation</a>.
       </p>
    </div>
 </div>
