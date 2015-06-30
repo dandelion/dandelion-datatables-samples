@@ -24,7 +24,7 @@
          <div class="span12">
 
             <datatables:table id="myTableId" data="${persons}" row="person" export="csv">
-               <datatables:column title="Id" property="id" id="toto" />
+               <datatables:column title="Id" property="id" />
                <datatables:column title="FirstName" property="firstName" />
                <datatables:column title="LastName" property="lastName" />
                <datatables:column title="City" property="address.town.name" />

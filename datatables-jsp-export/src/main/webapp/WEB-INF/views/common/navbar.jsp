@@ -6,7 +6,7 @@
 <c:url value="/options" var="options" />
 <c:url value="/custom" var="custom" />
 
-<a href="https://github.com/dandelion/dandelion-samples">
+<a href="https://github.com/dandelion/dandelion-datatables-samples">
    <img style="position: fixed; top: 0; left: 0; border: 0; z-index: 1500;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"/>
 </a>
 <div class="navbar navbar-fixed-top">
@@ -53,7 +53,7 @@
                   <ul class="dropdown-menu">
                      <li><a href="http://dandelion.github.io/datatables">Documentation</a></li>
                      <li><a href="http://dandelion-forum.48353.x6.nabble.com/">Forum</a></li>
-                     <li><a href="https://waffle.io/dandelion/dandelion-samples">Report an issue</a></li>
+                     <li><a href="https://github.com/dandelion/dandelion-datatables-samples/issues">Report an issue</a></li>
                   </ul>
                </li>
             </ul>
