@@ -14,6 +14,7 @@ import com.github.dandelion.datatables.core.export.CsvExport;
 import com.github.dandelion.datatables.core.export.ExportConf;
 import com.github.dandelion.datatables.core.export.ExportUtils;
 import com.github.dandelion.datatables.core.export.HtmlTableBuilder;
+import com.github.dandelion.datatables.core.export.ReservedFormat;
 import com.github.dandelion.datatables.core.export.XmlExport;
 import com.github.dandelion.datatables.core.html.HtmlTable;
 import com.github.dandelion.datatables.extras.export.itext.PdfExport;
@@ -42,7 +43,7 @@ public class ExportController {
 
 		// Build the export configuration
 		// The custom format "myFormat" is just a wrapper around pdf
-		ExportConf exportCsvConf = new ExportConf.Builder("csv").header(true).exportClass(new CsvExport()).build();
+		ExportConf exportCsvConf = new ExportConf.Builder(ReservedFormat.CSV).header(true).exportClass(new CsvExport()).build();
 
 		// Build the table to export from the data and the export configuration
 		HtmlTable table = new HtmlTableBuilder<Person>().newBuilder("tableId", persons, request, exportCsvConf)
