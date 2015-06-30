@@ -37,7 +37,7 @@
                      <datatables:column title="LastName" property="lastName" />
                      <datatables:column title="City" property="address.town.name" />
                      <datatables:column title="Mail" property="mail" />
-                     <datatables:prop name="feature.dom" value="t" />
+                     <datatables:option name="feature.dom" value="t" />
                   </datatables:table>
                   
                </div>
