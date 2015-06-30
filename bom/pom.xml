@@ -1,20 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <artifactId>oss-parent</artifactId>
+      <groupId>org.sonatype.oss</groupId>
+      <version>7</version>
+   </parent>
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>dandelion-datatables-samples-bom</artifactId>
-   <version>1.0.0-SNAPSHOT</version>
+   <version>1.0.0</version>
    <packaging>pom</packaging>
-
    <name>Dandelion :: Datatables :: Samples :: BOM</name>
+   <description>BOM for all sample applications of Dandelion-Datatables
+   </description>
+   <url>http://dandelion.github.io</url>
+   <inceptionYear>2013</inceptionYear>
+   <organization>
+      <name>Dandelion Project</name>
+      <url>http://dandelion.github.io/</url>
+   </organization>
+
+   <licenses>
+      <license>
+         <distribution>repo</distribution>
+         <name>BSD 3-Clause</name>
+         <url>http://opensource.org/licenses/BSD-3-Clause</url>
+      </license>
+   </licenses>
 
    <properties>
       <!-- Configuration -->
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.version>1.0.0-SNAPSHOT</dandelion.version>
+      <dandelion.version>1.0.0</dandelion.version>
       <jstl.version>1.2</jstl.version>
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
@@ -300,6 +320,52 @@
          </dependency>
       </dependencies>
    </dependencyManagement>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>sign-artifacts</id>
+                  <phase>verify</phase>
+                  <goals>
+                     <goal>sign</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+
+   <ciManagement>
+      <system>CloudBees</system>
+      <url>https://dandelion.ci.cloudbees.com/</url>
+   </ciManagement>
+
+   <issueManagement>
+      <system>GitHub</system>
+      <url>https://github.com/dandelion/dandelion/issues</url>
+   </issueManagement>
+
+   <scm>
+      <connection>scm:git:git://github.com/dandelion/dandelion-datatables-samples.git</connection>
+      <developerConnection>scm:git:git@github.com:dandelion/dandelion-datatables-samples.git</developerConnection>
+      <url>http://github.com/dandelion/dandelion-datatables-samples</url>
+   </scm>
+
+   <developers>
+      <developer>
+         <id>tduchateau</id>
+         <name>Thibault Duchateau</name>
+         <email>thibault.duchateau@gmail.com</email>
+         <timezone>+1</timezone>
+         <roles>
+            <role>Lead developer</role>
+         </roles>
+      </developer>
+   </developers>
 
    <distributionManagement>
       <snapshotRepository>
