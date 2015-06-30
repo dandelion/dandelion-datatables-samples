@@ -9,7 +9,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>dandelion-datatables-samples-bom</artifactId>
-   <version>1.0.1-SNAPSHOT</version>
+   <version>1.0.0</version>
    <packaging>pom</packaging>
    <name>Dandelion :: Datatables :: Samples :: BOM</name>
    <description>BOM for all sample applications of Dandelion-Datatables
@@ -57,6 +57,7 @@
       <tomcat7-maven-plugin.version>2.0</tomcat7-maven-plugin.version>
       <jetty-maven-plugin.version>8.1.8.v20121106</jetty-maven-plugin.version>
       <spring-boot-maven-plugin.version>1.0.2.RELEASE</spring-boot-maven-plugin.version>
+      <maven.gpg.version>1.4</maven.gpg.version>
    </properties>
 
    <dependencyManagement>
@@ -321,23 +322,35 @@
       </dependencies>
    </dependencyManagement>
 
-   <build>
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-               <execution>
-                  <id>sign-artifacts</id>
-                  <phase>verify</phase>
-                  <goals>
-                     <goal>sign</goal>
-                  </goals>
-               </execution>
-            </executions>
-         </plugin>
-      </plugins>
-   </build>
+   <profiles>
+      <profile>
+         <id>release-sign-artifacts</id>
+         <activation>
+            <property>
+               <name>performRelease</name>
+               <value>true</value>
+            </property>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-gpg-plugin</artifactId>
+                  <version>${maven.gpg.version}</version>
+                  <executions>
+                     <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                           <goal>sign</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+   </profiles>
 
    <ciManagement>
       <system>CloudBees</system>
