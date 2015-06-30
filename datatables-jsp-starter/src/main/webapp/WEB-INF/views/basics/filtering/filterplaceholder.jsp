@@ -6,7 +6,7 @@
       <h3>Filtering using different filter placeholders</h3>
       <p>By default, as soon as a column is filterable, filtering elements will be added in the
          tfoot but you can configure the filter placeholder.</p>
-      <p>In this example, the filtering elements are added after the first header row.</p>
+      <p>In this example, the filtering elements are added in the first header row.</p>
    </div>
 </div>
 
