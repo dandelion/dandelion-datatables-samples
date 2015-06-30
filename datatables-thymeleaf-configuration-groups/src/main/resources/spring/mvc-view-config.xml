@@ -23,12 +23,12 @@
    </bean>
 
    <bean id="tilesViewResolver" class="org.thymeleaf.spring3.view.ThymeleafViewResolver">
-      <property name="viewClass" value="org.thymeleaf.extras.tiles2.spring.web.view.ThymeleafTilesView" />
+      <property name="viewClass" value="org.thymeleaf.extras.tiles2.spring3.web.view.ThymeleafTilesView" />
       <property name="templateEngine" ref="templateEngine" />
    </bean>
 
    <!-- Configures the Tiles layout system using a specific thymeleaf-enabled Tiles Configurer -->
-   <bean id="tilesConfigurer" class="org.thymeleaf.extras.tiles2.spring.web.configurer.ThymeleafTilesConfigurer">
+   <bean id="tilesConfigurer" class="org.thymeleaf.extras.tiles2.spring3.web.configurer.ThymeleafTilesConfigurer">
       <property name="definitions">
          <list>
             <value>/WEB-INF/tiles/setup-tiles.xml</value>
