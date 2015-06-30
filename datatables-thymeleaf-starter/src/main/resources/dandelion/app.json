@@ -9,11 +9,6 @@
 		    "locations": {
 		        "webapp": "/assets/css/yadcf-custom.css"
 		    }
-		},
-		{
-		    "locations": {
-		        "webapp": "/assets/css/test.css"
-		    }
 		}
     ]
 }
