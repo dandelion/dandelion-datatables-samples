@@ -37,7 +37,7 @@ You can then access the sample here: [http://localhost:9090/datatables-jsp-theme
 
 ## Bug/improvement
 
-Please report it using the issue tracker dedicated to all sample apps: [https://waffle.io/dandelion/dandelion-samples](https://waffle.io/dandelion/dandelion-samples)
+Please report it using the issue tracker dedicated to all sample apps: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).
