@@ -12,8 +12,8 @@
 <div class="row-fluid">
    <div class="span12">
    
-      <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterDelay="1000" cssClass="display">
-         <datatables:column title="Id" property="id" />
+      <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterDelay="3000" cssClass="display">
+         <datatables:column title="Id" property="id"/>
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
          <datatables:column title="City" property="address.town.name" filterable="true" />

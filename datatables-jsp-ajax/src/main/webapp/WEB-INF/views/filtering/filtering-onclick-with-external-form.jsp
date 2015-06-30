@@ -19,12 +19,10 @@
 
 <div class="row-fluid well">
    <div class="span6">
-      <div id="firstNameFilter"></div>
-      <div id="lastNameFilter"></div>
-      <div id="cityFilter"></div>
-      <div id="companyFilter"></div>
-      Firstname: <div id="salaryFilter"><input type="text" /></div>
-      Lastname: <div id="birthDateFilter"><input type="text" /></div>
+      Firstname: <div id="firstNameFilter"></div>
+      Lastname: <div id="lastNameFilter"></div>
+      City: <div id="cityFilter"></div>
+      Company: <div id="companyFilter"></div>
    </div>
    <div class="span6">
       <a id="filterButton" class="btn btn-large btn-primary">Apply filters</a> 
@@ -37,8 +35,8 @@
 
       <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterPlaceholder="none" filterSelector="#filterButton" filterClearSelector="#filterClearButton" cssClass="display">
          <datatables:column title="Id" name="id" property="id" />
-         <datatables:column title="FirstName" name="firstName" property="firstName" selector="firstNameFilter" />
-         <datatables:column title="LastName" name="lastName" property="lastName" selector="lastNameFilter" />
+         <datatables:column title="FirstName" name="firstName" property="firstName" filterable="true" selector="firstNameFilter" />
+         <datatables:column title="LastName" name="lastName" property="lastName" filterable="true" selector="lastNameFilter" />
          <datatables:column title="City" name="city" property="address.town.name" filterable="true" filterCssClass="input-medium" selector="cityFilter" />
          <datatables:column title="Mail" name="mail" property="mail" renderFunction="app-custom-rendering#mailify" />
          <datatables:column title="Company" name="company" property="company.name" filterable="true" filterType="select" filterValues="app-filtering#predefinedValues" selector="companyFilter" />
