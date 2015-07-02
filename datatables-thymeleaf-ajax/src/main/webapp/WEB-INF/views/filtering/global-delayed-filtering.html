@@ -10,8 +10,7 @@
       <div class="row-fluid row-intro">
          <div class="span12">
             <h3>Global delayed filtering</h3>
-            <p>In the following example, any action in the table (global filtering, paging,
-               individual column filtering, sorting) will be performed after a delay of 1000ms
+            <p>In the following example, any filtering action in columns will be performed after a delay of 2000ms
                (instead of the default 500ms).</p>
          </div>
       </div>
@@ -19,7 +18,7 @@
       <div class="row-fluid">
          <div class="span12">
 
-            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:filterDelay="1000" class="display">
+            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:filterDelay="2000" class="display">
                <thead>
                   <tr>
                      <th dt:property="id">Id</th>

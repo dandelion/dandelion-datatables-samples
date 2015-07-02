@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables"
-   xmlns:ddl="http://www.thymeleaf.org/dandelion">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
 
 <head th:include="common/head::head" />
 <body>
@@ -25,10 +24,10 @@
       
       <div class="row-fluid well">
          <div class="span6">
-            <div id="firstNameFilter"></div>
-            <div id="lastNameFilter"></div>
-            <div id="cityFilter"></div>
-            <div id="companyFilter"></div>
+            Firstname: <div id="firstNameFilter"></div>
+            Lastname: <div id="lastNameFilter"></div>
+            City: <div id="cityFilter"></div>
+            Company: <div id="companyFilter"></div>
          </div>
          <div class="span6">
             <a id="filterButton" class="btn btn-large btn-primary">Apply filters</a>
@@ -37,17 +36,17 @@
       </div>
 
       <div class="row-fluid">
-         <div class="span12" ddl:bundle-includes="app-filtering,moment,bootstrap-datepicker">
+         <div class="span12">
 
-            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:processing="true" dt:filterplaceholder="none" dt:filterSelector="#filterButton" dt:filterClearSelector="#filterClearButton">
+            <table id="myTableId" dt:table="true" dt:url="@{/ajax/persons}" dt:serverside="true" dt:filterplaceholder="none" dt:filterSelector="#filterButton" dt:filterClearSelector="#filterClearButton" class="display">
                <thead>
                   <tr>
                      <th dt:property="id" dt:name="id">Id</th>
-                     <th dt:property="firstName" dt:name="firstName" dt:filterable="true" dt:selector="#firstNameFilter">Firstname</th>
-                     <th dt:property="lastName" dt:name="lastName" dt:filterable="true"  dt:selector="#lastNameFilter">Lastname</th>
-                     <th dt:property="address.town.name" dt:name="town" dt:filterable="true" dt:selector="#cityFilter">City</th>
-                     <th dt:property="mail" dt:name="mail" dt:renderFunction="mailify">Mail</th>
-                     <th dt:property="company.name" dt:name="company" dt:filterable="true" dt:filterType="select" dt:filterValues="predefinedValues" dt:selector="#companyFilter">Company</th>
+                     <th dt:property="firstName" dt:filterable="true" dt:selector="firstNameFilter">Firstname</th>
+                     <th dt:property="lastName" dt:filterable="true"  dt:selector="lastNameFilter">Lastname</th>
+                     <th dt:property="address.town.name" dt:filterable="true" dt:selector="cityFilter">City</th>
+                     <th dt:property="mail" dt:renderFunction="app-custom-rendering#mailify">Mail</th>
+                     <th dt:property="company.name" dt:filterable="true" dt:filterType="select" dt:filterValues="app-filtering#predefinedValues" dt:selector="companyFilter">Company</th>
                   </tr>
                </thead>
             </table>
