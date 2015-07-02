@@ -8,7 +8,7 @@ A sample which show how to use global and configuration groups in a Thymeleaf an
  - Apache Tiles 2.2.2
  - Thymeleaf 2.1.4.RELEASE
  - Thymeleaf Extra Tiles2 2.1.0.RELEASE
- - Dandelion-Datatables 1.0.0
+ - Dandelion-Datatables 1.0.1-SNAPSHOT
  - Spring 3.2.10.RELEASE
 
 ## Features
@@ -36,7 +36,7 @@ You can then access the sample here: [http://localhost:9090/datatables-thymeleaf
 
 ## Bug/improvement
 
-Please report it using the issue tracker dedicated to all sample apps: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
+Please report it using the corresponding issue tracker: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

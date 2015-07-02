@@ -7,7 +7,7 @@ A sample which shows how to configure Dandelion-Datatables to work with Struts 1
 
  - JSP 
  - JSTL 1.2
- - Dandelion-Datatables 1.0.0
+ - Dandelion-Datatables 1.0.1-SNAPSHOT
  - Struts 1.3.10
 
 ## Features
@@ -33,7 +33,7 @@ You can then access the sample here: [http://localhost:9090/datatables-jsp-i18n-
 
 ## Bug/improvement
 
-Please report it using the issue tracker dedicated to all sample apps: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
+Please report it using the corresponding issue tracker: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

@@ -4,7 +4,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>datatables-jsp-ajax</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.1-SNAPSHOT</version>
    <packaging>war</packaging>
 
    <name>Dandelion :: Datatables :: Samples :: datatables-jsp-ajax</name>
@@ -18,7 +18,7 @@
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>dandelion-datatables-samples-bom</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
             <type>pom</type>
             <scope>import</scope>
          </dependency>
