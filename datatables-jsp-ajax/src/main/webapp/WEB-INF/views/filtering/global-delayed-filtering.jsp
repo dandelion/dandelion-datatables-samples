@@ -4,15 +4,14 @@
 <div class="row-fluid row-intro">
    <div class="span12">
       <h3>Global delayed filtering</h3>
-      <p>In the following example, any action in the table (global filtering, paging, individual
-         column filtering, sorting) will be performed after a delay of 1000ms.</p>
+      <p>In the following example, any filtering action in columns will be performed after a delay of 2000ms.</p>
    </div>
 </div>
 
 <div class="row-fluid">
    <div class="span12">
    
-      <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterDelay="3000" cssClass="display">
+      <datatables:table id="myTableId" url="/ajax/persons" serverSide="true" filterDelay="2000" cssClass="display">
          <datatables:column title="Id" property="id"/>
          <datatables:column title="FirstName" property="firstName" />
          <datatables:column title="LastName" property="lastName" />
