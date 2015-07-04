@@ -8,7 +8,7 @@ A sample which show how to configure tables using the configuration properties.
  - JSP 
  - JSTL 1.2
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 1.0.1-SNAPSHOT
+ - Dandelion-Datatables 1.0.1
  - Spring 3.2.10.RELEASE
 
 ## Features

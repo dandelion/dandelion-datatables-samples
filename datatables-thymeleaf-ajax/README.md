@@ -6,7 +6,7 @@ A sample which shows how to use an AJAX source with server-side processing based
 ## Technology stack
 
  - Thymeleaf 2.1.4.RELEASE
- - Dandelion-Datatables 1.0.1-SNAPSHOT
+ - Dandelion-Datatables 1.0.1
  - Jackson 1.9.13
  - Spring 3.2.10.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0

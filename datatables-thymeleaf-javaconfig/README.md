@@ -6,7 +6,7 @@ A sample which shows how to set up and application using Dandelion, Thymeleaf an
 ## Technology stack
 
  - Thymeleaf / Thymeleaf-Spring4 2.1.4.RELEASE
- - Dandelion-Datatables 1.0.1-SNAPSHOT
+ - Dandelion-Datatables 1.0.1
  - Spring 4.1.6.RELEASE
 
 ## Features

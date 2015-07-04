@@ -8,7 +8,7 @@ See below the full list of features contained in this sample.
 ## Technology stack
 
  - JSP
- - Dandelion-Datatables 1.0.1-SNAPSHOT
+ - Dandelion-Datatables 1.0.1
  - Jackson 1.9.13
  - Spring 3.2.10.RELEASE
  - Hibernate 4.3.5.Final / JPA 2.0
