@@ -7,7 +7,7 @@ A sample which shows the basics of Dandelion-Datatables: feature enablement, sor
 
  - JSP
  - Apache Tiles 2.2.2
- - Dandelion-Datatables 1.0.0
+ - Dandelion-Datatables 1.0.1
  - Spring 3.2.10.RELEASE
 
 ## Features
@@ -45,7 +45,7 @@ You can then access the sample here: [http://localhost:9090/datatables-jsp-start
 
 ## Bug/improvement
 
-Please report it using the issue tracker dedicated to all sample apps: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
+Please report it using the corresponding issue tracker: [https://github.com/dandelion/dandelion-datatables-samples/issues](https://github.com/dandelion/dandelion-datatables-samples/issues)
 
 =
 The [Dandelion team](http://dandelion.github.io/team/).

@@ -28,11 +28,11 @@ public class PersonRepositoryUtils {
 		/**
 		 * Step 1.1: global filtering
 		 */
-		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneFilterableColumn()) {
+		if (StringUtils.isNotBlank(criterias.getSearch()) && criterias.hasOneSearchableColumn()) {
 			queryBuilder.append(" WHERE ");
 
 			for (ColumnDef columnDef : criterias.getColumnDefs()) {
-				if (columnDef.isFilterable() && StringUtils.isBlank(columnDef.getSearch())) {
+				if (columnDef.isSearchable() && StringUtils.isBlank(columnDef.getSearch())) {
 					paramList.add(" LOWER(p." + columnDef.getName()
 							+ ") LIKE '%?%'".replace("?", criterias.getSearch().toLowerCase()));
 				}
@@ -50,7 +50,7 @@ public class PersonRepositoryUtils {
 		/**
 		 * Step 1.2: individual column filtering
 		 */
-		if (criterias.hasOneFilterableColumn() && criterias.hasOneFilteredColumn()) {
+		if (criterias.hasOneSearchableColumn() && criterias.hasOneFilteredColumn()) {
 			paramList = new ArrayList<String>();
 			
 			if(!queryBuilder.toString().contains("WHERE")){
@@ -61,7 +61,7 @@ public class PersonRepositoryUtils {
 			}
 
 			for (ColumnDef columnDef : criterias.getColumnDefs()) {
-				if (columnDef.isFilterable()){
+				if (columnDef.isSearchable()){
 					if (StringUtils.isNotBlank(columnDef.getSearchFrom())) {
 						if (columnDef.getName().equalsIgnoreCase("birthDate")) {
 							paramList.add("p." + columnDef.getName() + " >= '" + columnDef.getSearchFrom() + "'");

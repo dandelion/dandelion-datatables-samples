@@ -4,10 +4,10 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>datatables-thymeleaf-ajax</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.1</version>
    <packaging>war</packaging>
 
-   <name>Dandelion :: Samples :: Datatables :: datatables-thymeleaf-basics</name>
+   <name>Dandelion :: Samples :: Datatables :: datatables-thymeleaf-ajax</name>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +18,7 @@
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>dandelion-datatables-samples-bom</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
             <type>pom</type>
             <scope>import</scope>
          </dependency>
