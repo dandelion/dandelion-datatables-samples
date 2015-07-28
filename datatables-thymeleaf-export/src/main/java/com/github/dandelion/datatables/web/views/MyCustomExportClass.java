@@ -57,7 +57,7 @@ public class MyCustomExportClass implements DatatablesExport {
 	@Override
 	public void initExport(HtmlTable table) {
 		this.table = table;
-		this.exportConf = table.getTableConfiguration().getExportConfiguration().get("myformat");
+		this.exportConf = table.getTableConfiguration().getExportConfigurations().get("myformat");
 	}
 
 	@Override
