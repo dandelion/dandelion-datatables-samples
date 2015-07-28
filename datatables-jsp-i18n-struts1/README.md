@@ -7,7 +7,7 @@ A sample which shows how to configure Dandelion-Datatables to work with Struts 1
 
  - JSP 
  - JSTL 1.2
- - Dandelion-Datatables 1.0.1
+ - Dandelion-Datatables 1.1.0
  - Struts 1.3.10
 
 ## Features

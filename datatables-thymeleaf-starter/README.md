@@ -6,7 +6,7 @@ A sample which shows the basics of Dandelion-Datatables when using Thymeleaf: fe
 ## Technology stack
 
  - Thymeleaf 2.1.4.RELEASE
- - Dandelion-Datatables 1.0.1
+ - Dandelion-Datatables 1.1.0
  - Spring 3.2.10.RELEASE
 
 ## Features

@@ -6,7 +6,7 @@ A sample which shows how to use with Thymeleaf the DataTables' extras supported 
 ## Technology stack
 
  - Thymeleaf 2.1.3.RELEASE
- - Dandelion-Datatables 1.0.1
+ - Dandelion-Datatables 1.1.0
  - Spring 3.2.10.RELEASE
 
 ## Features
