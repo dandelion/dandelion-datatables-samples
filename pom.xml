@@ -9,7 +9,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>dandelion-datatables-samples-bom</artifactId>
-   <version>1.0.2-SNAPSHOT</version>
+   <version>1.1.0-SNAPSHOT</version>
    <packaging>pom</packaging>
    <name>Dandelion :: Datatables :: Samples :: BOM</name>
    <description>BOM for all sample applications of Dandelion-Datatables
@@ -34,7 +34,8 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.version>1.0.1</dandelion.version>
+      <dandelion.version>1.1.0</dandelion.version>
+      <dandelion-datatables.version>1.1.0</dandelion-datatables.version>
       <jstl.version>1.2</jstl.version>
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
@@ -98,47 +99,42 @@
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-jsp</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-thymeleaf</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-spring3</artifactId>
-            <version>${dandelion.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>com.github.dandelion</groupId>
-            <artifactId>datatables-compression-yui</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-export-poi</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-export-poi-ooxml</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-export-itext</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-struts1</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
          <dependency>
             <groupId>com.github.dandelion</groupId>
             <artifactId>datatables-struts2</artifactId>
-            <version>${dandelion.version}</version>
+            <version>${dandelion-datatables.version}</version>
          </dependency>
 
          <!-- Spring 3 -->
