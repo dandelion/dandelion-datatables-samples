@@ -99,7 +99,6 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styling <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                            <li><a href="${stylingUrl}/styling">Styling</a></li>
-                           <li><a href="${stylingUrl}/effect">Applying effects</a></li>
                         </ul>
                      </li>
                   <li class="dropdown">
