@@ -9,7 +9,7 @@
 
    <groupId>com.github.dandelion</groupId>
    <artifactId>dandelion-datatables-samples-bom</artifactId>
-   <version>1.1.0</version>
+   <version>1.1.1-SNAPSHOT</version>
    <packaging>pom</packaging>
    <name>Dandelion :: Datatables :: Samples :: BOM</name>
    <description>BOM for all sample applications of Dandelion-Datatables
