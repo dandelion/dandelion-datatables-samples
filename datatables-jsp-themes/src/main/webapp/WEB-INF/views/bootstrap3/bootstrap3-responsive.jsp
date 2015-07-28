@@ -7,19 +7,10 @@
 <div class="row row-intro">
    <div class="span12">
       <h3>Bootstrap 3 responsive theme</h3>
-      <p>This example shows how easily the Bootstrap framework can be integrated.</p>
-      <p>Note that we made the black row in the thead disappear. To do that, we used the
-         Dandelion JSP taglib to modify the active scopes by excluding the Datatables' CSS as
-         follows:</p>
       <p>
-         <code>&lt;dandelion:asset cssExcludes="datatables" /></code>
-      </p>
-      <p>
-         As a consequence, we lost the sorting icons. But you could of course get them back by using
-         custom CSS. See the <a
-            href="http://dandelion.github.io/components/datatables/tutorials/styling/themes/bootstrap2.html">documentation</a>
-         for more details.
-      </p>
+         This example uses the <strong>bootstrap2-responsive</strong> extension to add a responsive
+         behaviour to the table.</p>
+      <p>Try to resize your window to see it in action!</p>
    </div>
 </div>
 

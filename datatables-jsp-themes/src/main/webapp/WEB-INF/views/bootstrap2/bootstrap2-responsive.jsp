@@ -9,10 +9,7 @@
       <h3>Bootstrap 2 responsive theme</h3>
       <p>
          This example uses the <strong>bootstrap2-responsive</strong> extension to add a responsive
-         behaviour to the table. This extension is based on the <a
-            href="https://github.com/Comanche/datatables-responsive">datatables-responsive</a>
-         helper authored by <a href="https://github.com/Comanche">Comanche</a>.
-      </p>
+         behaviour to the table.</p>
       <p>Try to resize your window to see it in action!</p>
    </div>
 </div>

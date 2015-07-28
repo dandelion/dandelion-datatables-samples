@@ -14,12 +14,6 @@
       <p>
          <code>&lt;dandelion:asset cssExcludes="datatables" /></code>
       </p>
-      <p>
-         As a consequence, we lost the sorting icons. But you could of course get them back by using
-         custom CSS. See the <a
-            href="http://dandelion.github.io/components/datatables/tutorials/styling/themes/bootstrap2.html">documentation</a>
-         for more details.
-      </p>
    </div>
 </div>
 
