@@ -34,8 +34,8 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
       <!-- Dependencies -->
-      <dandelion.version>1.1.0</dandelion.version>
-      <dandelion-datatables.version>1.1.0</dandelion-datatables.version>
+      <dandelion.version>1.1.1</dandelion.version>
+      <dandelion-datatables.version>1.1.1</dandelion-datatables.version>
       <jstl.version>1.2</jstl.version>
       <tiles.version>2.2.2</tiles.version>
       <servlet-api.version>3.0.1</servlet-api.version>
